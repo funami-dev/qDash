@@ -1,17 +1,21 @@
 {
   "name": "qdash",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "OBD2-Dashboard als PWA für den WiCAN-Adapter (Web Bluetooth)",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.mjs",
+    "test": "node --test test/*.test.mjs"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DerFu/qDash.git"
   },
   "keywords": [
-    "nodejs"
+    "obd2",
+    "elm327",
+    "wican",
+    "pwa",
+    "web-bluetooth"
   ],
   "author": "Daniel Weber",
   "license": "ISC",
@@ -19,7 +23,8 @@
     "url": "https://github.com/DerFu/qDash/issues"
   },
   "homepage": "https://github.com/DerFu/qDash#readme",
-  "dependencies": {
-    "ws": "^3.1.0"
+  "type": "module",
+  "engines": {
+    "node": ">=20.11"
   }
 }
