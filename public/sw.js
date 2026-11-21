@@ -1,5 +1,5 @@
 // App-Shell offline verfügbar machen (Cache-first, bei neuer Version CACHE erhöhen).
-const CACHE = 'qdash-v1';
+const CACHE = 'qdash-v2';
 const ASSETS = [
   './', 'index.html', 'styles.css', 'manifest.webmanifest', 'icon.svg',
   'js/app.js', 'js/elm327.js', 'js/pids.js', 'js/transport-ble.js', 'js/transport-demo.js',
