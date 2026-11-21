@@ -28,11 +28,12 @@ Technisch: Service `0xFEE0`, Characteristic `0xFEE1` (Write + Notify), verschlü
 
 Web Bluetooth braucht einen *secure context*: `localhost` oder HTTPS.
 
-## Auf dem Handy (GitHub Pages)
+## Auf dem Handy
 
-Der Workflow `.github/workflows/pages.yml` testet jeden Push und veröffentlicht `public/` bei Push auf `master`.
-Einmalig nötig: im Repo unter **Settings → Pages → Build and deployment → Source** „**GitHub Actions**“ wählen.
-Danach die Seite in Chrome auf Android öffnen und über das Menü „Zum Startbildschirm hinzufügen“.
+Läuft auf Cloudflare Workers: **https://qdash.dw-a6b.workers.dev/**
+In Chrome auf Android öffnen und über das Menü „App installieren“ wählen.
+
+Der Workflow `.github/workflows/test.yml` führt bei jedem Push und PR die Tests aus. Die Veröffentlichung läuft nicht automatisch.
 
 ## Aufbau
 
